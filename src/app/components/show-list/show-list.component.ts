@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IShow } from './../../core/interfaces/show';
 
 @Component({
   selector: 'app-show-list',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./show-list.component.scss']
 })
 export class ShowListComponent implements OnInit {
+  @Input() shows: IShow[];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.shows = this.shows as IShow[];
   }
-
 }

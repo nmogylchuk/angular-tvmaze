@@ -1,0 +1,11 @@
+@import "./../../../styles.scss";
+
+.loading {
+    width: 100%;
+    .loading__item {
+      text-align: center;
+      padding: .5rem;
+      margin: .5rem auto;
+      color: $green;
+    }
+  }

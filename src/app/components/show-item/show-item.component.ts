@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IShow } from './../../core/interfaces/show';
 
 @Component({
   selector: 'app-show-item',
   templateUrl: './show-item.component.html',
   styleUrls: ['./show-item.component.scss']
 })
-export class ShowItemComponent implements OnInit {
+export class ShowItemComponent {
 
-  constructor() { }
+  @Input() show: IShow;
 
-  ngOnInit(): void {
+  constructor() {
   }
-
 }

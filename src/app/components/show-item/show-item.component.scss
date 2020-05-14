@@ -1,0 +1,76 @@
+@import "./../../../styles.scss";
+
+.show-item {
+    width: 100%;
+    .show-item__item {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+    .show-item__checkbox {
+      display: none;
+    }
+    .show-item__checkmark {
+      display: block;
+      padding: 0.2rem;
+      margin: 0.2rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      border: 1px solid $green;
+      border-radius: 5px;
+      background-color: #fff;
+      &::after {
+        content: "✔";
+        line-height: 1rem;
+        opacity: 0;
+      }
+      &.checked {
+        background: $green;
+        color: $white;
+        text-align: center;
+        &::after {
+          line-height: 1rem;
+          content: "✔";
+          opacity: 1;
+        }
+      }
+    }
+  
+    .show-item__done {
+      text-decoration: line-through;
+    }
+  
+    .show-item__number {
+      color: $green;
+      padding: 0.2rem;
+    }
+  
+    .show-item__name {
+      padding: 0.2rem;
+      word-break: break-all;
+    }
+  
+    .show-item__date {
+      position: absolute;
+      right: .1rem;
+      bottom: 0;
+      font-size: .5rem;
+    }
+  
+    .show-item__button {
+      width: 2rem;
+      height: 2rem;
+      margin: 0.2rem;
+      padding: 0.2rem;
+    }
+  
+    .button-remove {
+      color: yellow;
+      border: 1px solid $green;
+      &:hover {
+        background-color: yellow;
+        color: $white;
+      }
+    }
+  }
