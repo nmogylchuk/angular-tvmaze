@@ -3,23 +3,25 @@
 .show-list {
     width: 100%;
     .show-list__title {
-      padding: 0.5rem;
-      font-size: 2rem;
+      font-size: 1.675rem;
+      margin-bottom: 1rem;
     }
     .show-list__list {
-      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-basis: auto;
+      margin: 1rem;
       padding: 0;
     }
     .show-list__item {
-      width: 70%;
-      list-style-type: none;
-      position: relative;
+      width: 150px;
+      min-height: 100%;
+      margin: 0 .2rem 1rem;
+      background-color: #1f4b47;
       border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: .5rem;
-      margin: 1rem auto;
-      background-color: #F8F8F8;
-      box-shadow: 1px 5px 10px -5px $green;
+      border-bottom: 3px solid #3c948b;
+      box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
     }
     .show-list__noshows {
       text-align: center;
