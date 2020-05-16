@@ -1,16 +1,18 @@
-<div class="show-item">
-    <div class="show-item__list">
-        <div class="show-item__item">
-            <img class="show-item__photo" [src]="show.image.medium" [alt]="show.name" />
-        </div>
-        <div class="show-item__item">
-            <div class="show-item__name">{{ show.name }}</div>
-        </div>
-        <div class="show-item__item">
-            <div class="show-item__popularity">
-                <mat-icon>star</mat-icon>
-                <div class="show-item__rating">{{ show.rating.average }}</div>
+<a [routerLink]="['/show', show.id]">
+    <div class="show-item">
+        <div class="show-item__list">
+            <div class="show-item__item">
+                <img class="show-item__photo" [src]="show.image.medium" [alt]="show.name" />
+            </div>
+            <div class="show-item__item">
+                <div class="show-item__name">{{ show.name }}</div>
+            </div>
+            <div class="show-item__item">
+                <div class="show-item__popularity">
+                    <mat-icon>star</mat-icon>
+                    <div class="show-item__rating">{{ show.rating.average }}</div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</a>

@@ -2,17 +2,21 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TvmazePageComponent } from './components/tvmaze-page/tvmaze-page.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-
+import { ShowDetailsComponent } from './components/show-details/show-details.component';
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'main'
+    redirectTo: 'show'
   },
   {
-    path: 'main',
+    path: 'show',
     component: TvmazePageComponent
+  },
+  {
+    path: 'show/:id',
+    component: ShowDetailsComponent
   },
   {
     path: '**',

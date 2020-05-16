@@ -15,6 +15,7 @@ import { ShowActionComponent } from './components/show-action/show-action.compon
 import { TvmazePageComponent } from './components/tvmaze-page/tvmaze-page.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ShowLoadingComponent } from './components/show-loading/show-loading.component';
+import { ShowDetailsComponent } from './components/show-details/show-details.component';
 // import { ShowsFilterPipe } from './core/pipes/show-filter';
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ShowLoadingComponent } from './components/show-loading/show-loading.com
     ShowActionComponent,
     TvmazePageComponent,
     NotFoundComponent,
-    ShowLoadingComponent
+    ShowLoadingComponent,
+    ShowDetailsComponent
     // ShowsFilterPipe
   ],
   imports: [

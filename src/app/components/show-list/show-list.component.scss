@@ -4,7 +4,7 @@
     width: 100%;
     .show-list__title {
       font-size: 1.675rem;
-      margin-bottom: 1rem;
+      margin: 1rem 2rem;
     }
     .show-list__list {
       display: flex;
@@ -12,7 +12,6 @@
       justify-content: space-around;
       flex-basis: auto;
       margin: 1rem;
-      padding: 0;
     }
     .show-list__item {
       width: 150px;

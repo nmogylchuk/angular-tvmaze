@@ -15,7 +15,11 @@ export class ShowService {
 
   fetchShows(): Observable<IShow[]> {
     return this.http
-    .get<IShow[]>(`http://api.tvmaze.com/shows?page=1`)
+    .get<IShow[]>(`http://api.tvmaze.com/shows`)
     .pipe(tap(shows => (this.shows = shows)));
+  }
+
+  fetchShow(id: number): Observable<IShow> {
+    return this.http.get<IShow>(`http://api.tvmaze.com/shows/${ id }`);
   }
 }
