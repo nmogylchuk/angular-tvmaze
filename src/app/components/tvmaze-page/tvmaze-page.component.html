@@ -1,5 +1,4 @@
 <div>
-    <app-header></app-header>
     <app-show-action></app-show-action>
     <div *ngIf="loading">
         <app-show-loading (load)="loadShows()"></app-show-loading>
@@ -7,5 +6,4 @@
     <div *ngIf="!loading">
         <app-show-list [shows]="shows"></app-show-list>
     </div>
-    <app-footer></app-footer>
 </div>

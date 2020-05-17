@@ -1,3 +1,5 @@
+@import "./../../../styles.scss";
+
 .show-details {
   width: 100%;
   .show-details__name {
@@ -11,7 +13,7 @@
     margin: 1rem;
   }
   .show-details__item {
-    margin: 0 1rem;
+    margin: 0.5rem 1rem;
     padding: 1rem;
     background-color: #f7f7f7;
     border: 1px solid #ccc;
@@ -26,9 +28,13 @@
     flex: 2;
     background-color: #fff;
   }
+  .show-details__image {
+    margin: 1rem auto;
+  }
   .show-details__photo {
     flex: 1;
-    margin: 1rem;
+    margin: 1rem auto 0;
+    max-width: 100%;
   }
   .show-details__summary {
     flex: 2;
@@ -38,11 +44,36 @@
     background-color: #f7f7f7;
     line-height: 2;
     flex: 1;
+    padding: 1rem;
   }
   .show-details__title {
     text-align: left;
   }
   .show-details__subtitle {
-    padding-right: .5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+a {
+  color: $green;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:visited {
+    color: darken ($green, 20%);
+  }
+  &:active {
+    color: darken ($green, 20%);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .show-details__list {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 630px) {
+  .show-details__description {
+    flex-direction: column;
   }
 }

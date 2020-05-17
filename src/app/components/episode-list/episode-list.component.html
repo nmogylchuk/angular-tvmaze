@@ -1,0 +1,7 @@
+<div class="episode-list" *ngIf="(show$ | async) as show">
+    <ul class="episode-list__list">
+        <li class="episode-list__item" *ngFor="let episode of episodes">
+            <app-episode-item [episode]="episode"></app-episode-item>
+        </li>
+    </ul>
+</div>

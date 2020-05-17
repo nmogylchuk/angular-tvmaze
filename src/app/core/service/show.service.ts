@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { IShow } from './../interfaces/show';
+import { IShowEpisode } from './../interfaces/episode';
 
 @Injectable({
   providedIn: 'root'
@@ -21,5 +22,9 @@ export class ShowService {
 
   fetchShow(id: number): Observable<IShow> {
     return this.http.get<IShow>(`http://api.tvmaze.com/shows/${ id }`);
+  }
+
+  fetchShowEpisodes(id: number): Observable<IShowEpisode[]> {
+    return this.http.get<IShowEpisode[]>(`http://api.tvmaze.com/shows/${ id }/episodes`);
   }
 }

@@ -1,0 +1,21 @@
+@import "./../../../styles.scss";
+
+.episode-list {
+    width: 100%;
+    .episode-list__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-basis: auto;
+      margin: 1rem;
+    }
+    .episode-list__item {
+      width: 150px;
+      min-height: 100%;
+      margin: 0 .2rem 1rem;
+      background-color: #1f4b47;
+      border: 1px solid #ccc;
+      border-bottom: 3px solid #3c948b;
+      box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
+    }
+  }

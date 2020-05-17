@@ -1,16 +1,16 @@
-<app-header></app-header>
 <div class="show-details" *ngIf="(show$ | async) as show">
-    <h1 class="show-details__name title">{{ show.name }}</h1>
     <div class="show-details__list">
         <div class="show-details__item show-details__description">
-            <img class="show-details__photo" [src]="show.image.medium" [alt]="show.name" />
+            <div class="show-details__image">
+                <img class="show-details__photo" [src]="show.image.medium" [alt]="show.name" />
+            </div>
             <div class="show-details__summary" [innerHTML]="show.summary"></div>
         </div>
         <div class="show-details__item show-details__info">
             <h2 class="show-details__title title">Show Info</h2>
             <div class="show-details__subitem">
                 <strong class="show-details__subtitle">Network:</strong>
-                <span>{{ show.network.name }}</span>
+                <span>"{{ show.network.name }}" in {{ show.network.country.name }} </span>
             </div>
             <div class="show-details__subitem">
                 <strong class="show-details__subtitle">Schedule:</strong>
@@ -38,7 +38,7 @@
             </div>
             <div class="show-details__subitem">
                 <strong class="show-details__subtitle">Official site:</strong>
-                <a [href]="show.officialSite" target="_blank">{{ show.officialSite }}</a>
+                <a [href]="show.officialSite" target="_blank">Click here</a>
             </div>
             <div class="show-details__subitem">
                 <strong class="show-details__subtitle">Raiting:</strong>
@@ -47,4 +47,3 @@
         </div>
     </div>
 </div>
-<app-footer></app-footer>

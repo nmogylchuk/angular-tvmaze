@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { MaterialModule } from './core/material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import {TabMenuModule} from 'primeng/tabmenu';
 
 // Components
 import { AppComponent } from './app.component';
@@ -16,6 +17,9 @@ import { TvmazePageComponent } from './components/tvmaze-page/tvmaze-page.compon
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ShowLoadingComponent } from './components/show-loading/show-loading.component';
 import { ShowDetailsComponent } from './components/show-details/show-details.component';
+import { EpisodeItemComponent } from './components/episode-item/episode-item.component';
+import { EpisodeListComponent } from './components/episode-list/episode-list.component';
+import { ShowPageComponent } from './components/show-page/show-page.component';
 // import { ShowsFilterPipe } from './core/pipes/show-filter';
 
 @NgModule({
@@ -29,14 +33,18 @@ import { ShowDetailsComponent } from './components/show-details/show-details.com
     TvmazePageComponent,
     NotFoundComponent,
     ShowLoadingComponent,
-    ShowDetailsComponent
+    ShowDetailsComponent,
+    EpisodeItemComponent,
+    EpisodeListComponent,
+    ShowPageComponent
     // ShowsFilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    TabMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
