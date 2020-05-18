@@ -1,5 +1,5 @@
-<div class="show-details" *ngIf="(show$ | async) as show">
-    <div class="show-details__list">
+<div class="show-details">
+    <div class="show-details__list" *ngIf="(show$ | async) as show">
         <div class="show-details__item show-details__description">
             <div class="show-details__image">
                 <img class="show-details__photo" [src]="show.image.medium" [alt]="show.name" />

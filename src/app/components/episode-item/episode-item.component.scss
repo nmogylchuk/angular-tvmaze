@@ -2,6 +2,7 @@
 
 .episode-item {
   width: 100%;
+  position: relative;
   .episode-item__list {
     display: flex;
     flex-direction: column;
@@ -20,5 +21,29 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+  .episode-item__schedule {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .episode-item__date {
+    background-color: #3c948b;
+    padding: .2rem;
+    font-size: .7rem;
+    text-align: right;
+    color: $white;
+  }
+  .episode-item__time {
+    background-color: $white;
+    font-weight: bold;
+    padding: .2rem;
+    font-size: .7rem;
+    opacity: 0.6;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+  }
+  .fa {
+    margin-right: .2rem;
   }
 }

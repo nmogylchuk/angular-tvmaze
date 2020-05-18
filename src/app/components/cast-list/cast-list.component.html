@@ -1,0 +1,7 @@
+<div class="cast-list" *ngIf="(show$ | async) as show">
+        <ul class="cast-list__list">
+            <li class="cast-list__item" *ngFor="let cast of casts">
+                <app-cast-item [cast]="cast"></app-cast-item>
+            </li>
+        </ul>
+    </div>

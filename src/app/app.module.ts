@@ -20,6 +20,8 @@ import { ShowDetailsComponent } from './components/show-details/show-details.com
 import { EpisodeItemComponent } from './components/episode-item/episode-item.component';
 import { EpisodeListComponent } from './components/episode-list/episode-list.component';
 import { ShowPageComponent } from './components/show-page/show-page.component';
+import { CastItemComponent } from './components/cast-item/cast-item.component';
+import { CastListComponent } from './components/cast-list/cast-list.component';
 // import { ShowsFilterPipe } from './core/pipes/show-filter';
 
 @NgModule({
@@ -36,7 +38,9 @@ import { ShowPageComponent } from './components/show-page/show-page.component';
     ShowDetailsComponent,
     EpisodeItemComponent,
     EpisodeListComponent,
-    ShowPageComponent
+    ShowPageComponent,
+    CastItemComponent,
+    CastListComponent
     // ShowsFilterPipe
   ],
   imports: [

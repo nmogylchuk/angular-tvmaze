@@ -1,4 +1,5 @@
-// http://api.tvmaze.com/shows/1
+
+// http://api.tvmaze.com/shows/1/episodes
 
 export interface IShowEpisode {
   id: number;

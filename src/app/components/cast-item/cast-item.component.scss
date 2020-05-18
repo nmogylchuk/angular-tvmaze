@@ -1,0 +1,27 @@
+@import "./../../../styles.scss";
+
+.cast-item {
+    width: 100%;
+    position: relative;
+    .cast-item__list {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .cast-item__item {
+      color: $white;
+    }
+    .cast-item__photo {
+      max-width: 100%;
+    }
+  
+    .cast-item__name {
+      font-weight: bold;
+      padding: .5rem;
+    }
+    .cast-item__character {
+        font-style: italic;
+        color: #71c5bd;
+        padding: .5rem;
+    }
+  }

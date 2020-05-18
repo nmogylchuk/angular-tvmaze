@@ -1,15 +1,15 @@
 @import "./../../../styles.scss";
 
-.episode-list {
+.cast-list {
     width: 100%;
-    .episode-list__list {
+    .cast-list__list {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
       flex-basis: auto;
       margin: 1rem;
     }
-    .episode-list__item {
+    .cast-list__item {
       width: 200px;
       min-height: 100%;
       margin: 1rem;

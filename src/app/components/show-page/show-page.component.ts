@@ -35,8 +35,9 @@ export class ShowPageComponent implements OnInit {
     private showDetailsService: ShowDetailsService
   ) {
     this.menuItems = [
-      { label: 'main', routerLink: 'main' },
-      { label: 'episodes', routerLink: ['episodes'] }
+      { label: 'main', routerLink: 'main', icon: 'fa fa-fw fa-bookmark-o'},
+      { label: 'episodes', routerLink: 'episodes', icon: 'fa fa-fw fa-calendar' },
+      { label: 'cast', routerLink: 'casts', icon: 'fa fa-fw fa-user-circle' }
     ];
 
     this.route.params.subscribe(params => {

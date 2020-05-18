@@ -5,6 +5,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ShowDetailsComponent } from './components/show-details/show-details.component';
 import { EpisodeListComponent } from './components/episode-list/episode-list.component';
 import { ShowPageComponent } from './components/show-page/show-page.component';
+import { CastListComponent } from './components/cast-list/cast-list.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
       {
         path: 'episodes',
         component: EpisodeListComponent,
+      },
+      {
+        path: 'casts',
+        component: CastListComponent,
       }
     ]
   },
