@@ -22,11 +22,15 @@ export class TvmazePageComponent implements OnInit {
     this.shows = this.showService.shows;
   }
 
-  onSearchShow($event) {
-    this.showService
-      .fetchSearchShow($event)
-      .subscribe(shows => {
-        this.shows = shows;
-      });
+  onSearchStart() {
+    this.loading = true;
+  }
+
+  onSearchEmpty() {
+    this.ngOnInit();
+  }
+
+  onSearchShow() {
+    this.loadShows();
   }
 }

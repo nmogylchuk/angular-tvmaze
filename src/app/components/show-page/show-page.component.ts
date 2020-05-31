@@ -15,7 +15,6 @@ export class ShowDetailsService {
 
   addData(show: IShow) {
     this.show.next(show);
-    console.log('Get show details end: ' + JSON.stringify(this.show));
   }
 }
 
@@ -41,7 +40,6 @@ export class ShowPageComponent implements OnInit {
     ];
 
     this.route.params.subscribe(params => {
-      console.log('Fetch show data by id: ' + params['id']);
       console.log(params);
       this.show$ = this.showService.fetchShow(params['id']);
       this.show$.subscribe(show => {
