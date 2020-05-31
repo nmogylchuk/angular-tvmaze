@@ -1,22 +1,25 @@
 @import "./../../../styles.scss";
 
-  .search {
-    margin: .5rem;
-    .search__list {
+.search {
+  width: 100%;
+  margin: 0.5rem;
+  .search__list {
     display: flex;
+    justify-content: center;
+    text-align: center;
     flex-wrap: wrap;
+    width: 80%;
+    margin: 1rem auto;
   }
-    .search__input {
-      min-width: 200px;
-      box-sizing: border-box;
-      padding: .5rem;
-      margin: .5rem auto;
-      border: 2px solid $green;
-    }
-    .search__button {
-        background-color: $green;
-        color: $white;
-        padding: .5rem;
-        margin: .5rem auto;
-    }
+  .search__input {
+    min-width: 300px;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border: 2px solid $green;
   }
+  .search__button {
+    background-color: $green;
+    color: $white;
+    padding: 0.5rem;
+  }
+}
