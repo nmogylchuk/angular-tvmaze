@@ -2,6 +2,7 @@
 
 .header {
   background-color: $background-black;
+  width: 100%;
   .header__list {
     display: flex;
     flex-wrap: wrap;
@@ -16,15 +17,18 @@
     width: 8.5rem;
     height: 2.5rem;
   }
-  .header__filter {
-    width: 400px;
-    margin: .5rem;
-  }
-  .search {
-    min-width: 100%;
-    box-sizing: border-box;
-    padding: .5rem;
-    margin: .5rem auto;
-    border: 2px solid $green;
-  }
+  // .header__filter {
+  //   width: 400px;
+  //   margin: .5rem;
+  // }
+  // .search {
+  //   display: flex;
+  //   .search__input {
+  //     min-width: 100%;
+  //     box-sizing: border-box;
+  //     padding: .5rem;
+  //     margin: .5rem auto;
+  //     border: 2px solid $green;
+  //   }
+  // }
 }

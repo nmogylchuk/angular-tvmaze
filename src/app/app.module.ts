@@ -5,6 +5,7 @@ import { MaterialModule } from './core/material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import {TabMenuModule} from 'primeng/tabmenu';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 // Components
 import { AppComponent } from './app.component';
@@ -22,7 +23,7 @@ import { EpisodeListComponent } from './components/episode-list/episode-list.com
 import { ShowPageComponent } from './components/show-page/show-page.component';
 import { CastItemComponent } from './components/cast-item/cast-item.component';
 import { CastListComponent } from './components/cast-list/cast-list.component';
-// import { ShowsFilterPipe } from './core/pipes/show-filter';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -40,15 +41,17 @@ import { CastListComponent } from './components/cast-list/cast-list.component';
     EpisodeListComponent,
     ShowPageComponent,
     CastItemComponent,
-    CastListComponent
-    // ShowsFilterPipe
+    CastListComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     HttpClientModule,
-    TabMenuModule
+    TabMenuModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

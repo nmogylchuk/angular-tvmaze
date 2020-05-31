@@ -16,8 +16,7 @@ export class ShowService {
   constructor(private http: HttpClient) {}
 
   fetchShows(): Observable<IShow[]> {
-    return this.http
-    .get<IShow[]>(`http://api.tvmaze.com/shows`)
+    return this.http.get<IShow[]>(`http://api.tvmaze.com/shows`)
     .pipe(tap(shows => (this.shows = shows)));
   }
 
@@ -31,5 +30,9 @@ export class ShowService {
 
   fetchShowCasts(id: number): Observable<IShowCast[]> {
     return this.http.get<IShowCast[]>(`http://api.tvmaze.com/shows/${ id }/cast`);
+  }
+
+  fetchSearchShow(query: string): Observable<IShow[]> {
+    return this.http.get<IShow[]>(`http://api.tvmaze.com/search/shows?q=${ query }`);
   }
 }

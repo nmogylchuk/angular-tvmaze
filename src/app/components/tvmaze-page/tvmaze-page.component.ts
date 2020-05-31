@@ -8,9 +8,9 @@ import { IShow } from './../../core/interfaces/show';
   styleUrls: ['./tvmaze-page.component.scss']
 })
 export class TvmazePageComponent implements OnInit {
-  shows: IShow[];
+  public shows: IShow[];
   public loading: boolean;
-  
+
   constructor(public showService: ShowService) {}
 
   ngOnInit() {
@@ -20,5 +20,13 @@ export class TvmazePageComponent implements OnInit {
   loadShows() {
     this.loading = false;
     this.shows = this.showService.shows;
+  }
+
+  onSearchShow($event) {
+    this.showService
+      .fetchSearchShow($event)
+      .subscribe(shows => {
+        this.shows = shows;
+      });
   }
 }

@@ -1,5 +1,6 @@
 <div>
     <app-show-action></app-show-action>
+    <app-search (searchEvent)="onSearchShow($event)"></app-search>
     <div *ngIf="loading">
         <app-show-loading (load)="loadShows()"></app-show-loading>
     </div>
