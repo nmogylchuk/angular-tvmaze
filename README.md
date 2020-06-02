@@ -1,3 +1,6 @@
+# angular tvmaze project - http://angular-tvmaze.herokuapp.com/shows
+TV Show and web series database. Create personalised schedules. Episode guide, cast, crew and character information. Recaps, reviews, episode trailers, etc.
+
 # AngularTvmaze
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
