@@ -1,0 +1,12 @@
+<div class="show-list">
+    <h1 class="show-list__title title">Show List</h1>
+    <ul class="show-list__list" *ngIf="shows.length; else noShows">
+        <li class="show-list__item" *ngFor="let show of shows">
+            <app-show-item [show]="show"></app-show-item>
+        </li>
+    </ul>
+
+    <ng-template #noShows>
+        <p class="show-list__noshows">No Shows now!</p>
+    </ng-template>
+</div>

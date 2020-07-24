@@ -1,0 +1,17 @@
+@import "./../../../styles.scss";
+
+:host ::ng-deep .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active {
+  background-color: #71c5bd;
+  border: 1px solid $green;
+  color: $white;
+}
+
+.show-page__name {
+  text-align: left;
+  margin: 1rem 2rem;
+}
+
+p-tabMenu {
+    display: block;
+    margin: 0 2rem;
+  }

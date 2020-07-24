@@ -1,0 +1,14 @@
+<div class="episode-item">
+    <div class="episode-item__list">
+        <div class="episode-item__item">
+            <img class="episode-item__photo" [src]="episode.image.medium" [alt]="episode.name" />
+        </div>
+        <div class="episode-item__item">
+            <div class="episode-item__name">{{ episode.name }}</div>
+        </div>
+    </div>
+    <div class="episode-item__schedule">
+        <div class="episode-item__date"><i class="fa fa-calendar-plus-o"></i>{{ episode.airdate | date:'mediumDate' }}</div>
+        <div class="episode-item__time"><i class="fa fa-clock-o"></i>{{ episode.airtime }}</div>
+    </div>
+</div>

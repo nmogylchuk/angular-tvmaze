@@ -1,0 +1,7 @@
+<div>
+    <div class="show-page" *ngIf="(show$ | async) as show">
+        <h1 class="show-page__name title">{{ show.name }}</h1>
+        <p-tabMenu class="show-page__navigation" [model]="menuItems" ></p-tabMenu>
+        <router-outlet></router-outlet>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="show-details">
+    <div class="show-details__list" *ngIf="(show$ | async) as show">
+        <div class="show-details__item show-details__description">
+            <div class="show-details__image">
+                <img class="show-details__photo" [src]="show.image.medium" [alt]="show.name" />
+            </div>
+            <div class="show-details__summary" [innerHTML]="show.summary"></div>
+        </div>
+        <div class="show-details__item show-details__info">
+            <h2 class="show-details__title title">Show Info</h2>
+            <div class="show-details__subitem">
+                <strong class="show-details__subtitle">Network:</strong>
+                <span>"{{ show.network.name }}" in {{ show.network.country.name }} </span>
+            </div>
+            <div class="show-details__subitem">
+                <strong class="show-details__subtitle">Schedule:</strong>
+                <span>{{ show.schedule.time}} {{ show.schedule.days }}</span>
+            </div>
+            <div class="show-details__subitem">
+                <strong class="show-details__subtitle">Status:</strong>
+                <span>{{ show.status }}</span>
+            </div>
+            <div class="show-details__subitem">
+                <strong class="show-details__subtitle">Show Type:</strong>
+                <span>{{ show.type }}</span>
+            </div>
+            <div class="show-details__subitem">
+                <strong class="show-details__subtitle">Genres:</strong>
+                <span>{{ show.genres.join(', ') }}</span>
+            </div>
+            <div class="show-details__subitem">
+                <strong class="show-details__subtitle">Episodes ordered: </strong>
+                <span></span>
+            </div>
+            <div class="show-details__subitem">
+                <strong class="show-details__subtitle">Created by:</strong>
+                <span></span>
+            </div>
+            <div class="show-details__subitem">
+                <strong class="show-details__subtitle">Official site:</strong>
+                <a [href]="show.officialSite" target="_blank">Click here</a>
+            </div>
+            <div class="show-details__subitem">
+                <strong class="show-details__subtitle">Raiting:</strong>
+                <span>{{ show.rating.average }}</span>
+            </div>
+        </div>
+    </div>
+</div>

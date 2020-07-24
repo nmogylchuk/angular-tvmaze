@@ -1,0 +1,32 @@
+@import "./../../../styles.scss";
+
+.show-item {
+  width: 100%;
+  .show-item__list {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .show-item__item {
+    color: $white;
+  }
+  .show-item__photo {
+    max-width: 100%;
+  }
+
+  .show-item__name {
+    font-weight: bold;
+    padding: .5rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .show-item__popularity {
+    display: flex;
+    text-align: center;
+    padding: .5rem;
+  }
+  .show-item__rating {
+    padding: .2rem; 
+  }
+}

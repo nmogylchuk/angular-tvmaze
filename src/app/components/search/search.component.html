@@ -1,0 +1,6 @@
+<form [formGroup]="searchShowForm" (ngSubmit)="onSearchShow()" class="search">
+    <div class="search__list">
+        <input formControlName="search" class="search__input" placeholder="Filter shows by title..." type="search">
+        <button class="search__button button" type="submit">Search</button>
+    </div>
+</form>
